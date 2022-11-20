@@ -6,7 +6,7 @@ services:
     build: ./stocks_products
     # Запускаем тестовый сервер
     command: python manage.py runserver 0.0.0.0:8000
-    # куда будут помещены данные из каталога app
+    # куда будут помещены данные из каталога stocks_products
     volumes:
       - ./stocks_products/:/usr/src/stocks_products/
     # Открываем порт 8000 внутри и снаружи
